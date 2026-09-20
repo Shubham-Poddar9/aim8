@@ -2,7 +2,7 @@ import streamlit as st
 import io
 from openai import OpenAI
 
-API_KEY="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"
+API_KEY=st.secrets["API_KEY"]
 
 client=OpenAI(api_key=API_KEY,base_url=
 "https://api.groq.com/openai/v1")
